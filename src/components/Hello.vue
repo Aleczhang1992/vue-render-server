@@ -25,15 +25,8 @@
 </template>
 
 <script>
-import Vue from 'vue'
-import {mapState} from 'vuex'
-import { Navbar, TabItem, TabContainer, TabContainerItem, Cell, Indicator } from 'mint-ui'
 
-Vue.component(Navbar.name, Navbar)
-Vue.component(TabItem.name, TabItem)
-Vue.component(TabContainer.name, TabContainer)
-Vue.component(TabContainerItem.name, TabContainerItem)
-Vue.component(Cell.name, Cell)
+import {mapState} from 'vuex'
 
 export default {
   name: 'hello',
@@ -43,13 +36,6 @@ export default {
       title: 'Hello Vue!',
       content: ''
     }
-  },
-  components: {
-    'mt-navbar': Navbar,
-    'mt-tab-item': TabItem,
-    'mt-tab-container': TabContainer,
-    'mt-tab-container-item': TabContainerItem,
-    'mt-cell': Cell,
   },
   methods: {
       async getContent () {

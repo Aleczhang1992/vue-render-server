@@ -8,25 +8,13 @@
 </template>
 
 <script>
-import Vue from 'vue'
-
-
-import { Header,Button} from 'mint-ui';
-
-Vue.component(Header.name, Header);
-Vue.component(Button.name, Button);
-
 
 export default {
-  name: 'app',
-  components: {
-    'mt-header':Header,
-    'mt-button':Button
-  }
+  name: 'app'
 }
 </script>
 
-<style>
+<style lang=css>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

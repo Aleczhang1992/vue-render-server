@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import { Indicator } from 'mint-ui'
+
 
   export default {
     data () {
@@ -42,7 +42,7 @@ import { Indicator } from 'mint-ui'
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang=css scoped>
   h1 {
     color: #42b983;
   }

@@ -1,7 +1,10 @@
 //路由配置
-const Hello = r => require(['components/Hello'], r);
-const TestPage = r => require(['components/TestPage'], r);
+//const Hello = r => require(['../components/Hello'], r);
+//const TestPage = r => require(['../components/TestPage'], r);
+const Hello = process.BROWSER  ? () => System.import('../components/Hello.vue') : require('../components/Hello.vue')
+const TestPage = process.BROWSER  ? () => System.import('../components/TestPage.vue') : require('../components/TestPage.vue')
 
+console.log(process.BROWSER);
 // 根目录
 const rootPath = '';
 
